@@ -1,0 +1,24 @@
+
+PROJECT CONCLUSION
+
+The project focused on predicting public transport arrival delays
+using weather, traffic, event and transport-related features.
+
+A dataset containing 2,000 records and 24 original columns was
+used. Data cleaning, exploratory data analysis and feature
+engineering were performed.
+
+Four regression models were evaluated:
+Linear Regression, Random Forest, XGBoost and Gradient Boosting.
+
+The Mean Baseline achieved the lowest MAE of 8.212 minutes.
+None of the trained machine learning models outperformed it.
+
+The results indicate weak predictive relationships between the
+available features and arrival delay.
+
+Future improvements could include larger real-world datasets,
+historical delay information, route distance and real-time traffic.
+
+The project demonstrates the complete machine learning workflow
+and highlights the importance of data quality and feature relevance.
