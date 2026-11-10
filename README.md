@@ -1,73 +1,16 @@
-# Public Transport Delay Prediction Using Weather & Events
+# React + Vite
 
-## Project Overview
-This project explores public transport arrival delays using weather conditions, traffic congestion, event information, transport types and scheduling data.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-The objective is to analyse the available data, identify patterns and build machine learning regression models to predict arrival delays.
+Currently, two official plugins are available:
 
-## Dataset
-- Total records: 2,000
-- Original features: 24
-- Target variable: `actual_arrival_delay_min`
-- Data source: [Kaggle – Public Transport Delays with Weather and Events](https://www.kaggle.com/datasets/khushikyad001/public-transport-delays-with-weather-and-events)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Technologies Used
-- Python
-- Pandas and NumPy
-- Matplotlib
-- Scikit-learn
-- XGBoost
-- Jupyter Notebook
+## React Compiler
 
-## Project Workflow
-1. Data loading and understanding
-2. Data cleaning and preprocessing
-3. Exploratory Data Analysis (EDA)
-4. Feature engineering
-5. Train-test splitting
-6. Regression model development
-7. Model evaluation and comparison
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Machine Learning Models
-- Linear Regression
-- Random Forest Regressor
-- XGBoost Regressor
-- Gradient Boosting Regressor
-- Mean Baseline
+## Expanding the Oxlint configuration
 
-## Model Evaluation
-
-The models were evaluated using Mean Absolute Error (MAE).
-
-| Model | MAE |
-|---|---:|
-| Mean Baseline | 8.212 |
-| Random Forest | 8.237 |
-| XGBoost | 8.263 |
-| Gradient Boosting | 8.314 |
-| Linear Regression | 8.418 |
-
-The Mean Baseline achieved the lowest MAE. None of the trained machine learning models outperformed it.
-
-## Key Findings
-- The available features showed weak predictive relationships with arrival delays.
-- Numerical correlations with the target were generally close to zero.
-- The trained models did not outperform the baseline.
-- The results highlight the importance of data quality and feature relevance in machine learning.
-
-## Conclusion
-This project demonstrates the end-to-end data science workflow, from data preprocessing and exploratory analysis to feature engineering and model evaluation.
-
-Although the models did not achieve better performance than the baseline, the investigation helped identify limitations in the available dataset and areas for future improvement.
-
-## Future Improvements
-- Explore larger real-world transport datasets.
-- Include historical delay information.
-- Incorporate route distance and vehicle information.
-- Investigate real-time traffic and weather data.
-- Improve feature selection and model performance.
-
-## Author
-Vedant Patil
-
-B.Tech – Computer Science and Engineering (AI & Edge Computing)
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
